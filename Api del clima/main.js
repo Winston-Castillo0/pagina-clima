@@ -38,13 +38,13 @@ if(navigator.geolocation) {
 
         if (data.weather[0].main === "Clouds") {
             icon.src = "animated/cloudy.svg"
-        } if (data.weather[0].main === "Thunderstorm") {
+        } else if (data.weather[0].main === "Thunderstorm") {
             icon.src ="animated/weather.svg"
-        } if (data.weather[0].main === "Drizzle") {
+        } else if (data.weather[0].main === "Drizzle") {
             icon.src = "animated/snowy-5.svg"
-        } if (data.weather[0].main === "Rain") {
+        } else if (data.weather[0].main === "Rain") {
             icon.src = "animated/rainy-6.svg"
-        } else (data.weather[0].main === "Clear") 
+        } else if (data.weather[0].main === "Clear") 
             icon.src = "animated/day.svg"
         
    
